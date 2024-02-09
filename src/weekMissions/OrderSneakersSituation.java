@@ -7,7 +7,6 @@ public class OrderSneakersSituation {
         // weekMission.Customer 의 잔액, weekMission.DeliveryManager 매상, weekMission.Staff 매상은 모두 10만원 시작 입니다.
 
 
-
         String nikeSneakersFeature = "안정감"; // 안정감 | 편안함 | 가벼움 등 신발 특징
         long nikeSneakersPrice = 50000;
         boolean havingNikeSneakersInStore = false; // 매장 Nike sneakers 재고 여부
@@ -17,7 +16,7 @@ public class OrderSneakersSituation {
         int costForDeliver = 15_000; // 배달 비용
 
         Customer customer = new Customer();
-        DeliveryManager deliveryManager = new DeliveryManager();
+        DeliveryManager deliveryManager = new DeliveryManager(daysForDeliver, costForDeliver, nikeSneakersPrice);
         Staff staff = new Staff(nikeSneakersFeature, nikeSneakersPrice, havingNikeSneakersInStore);
 
 
@@ -25,11 +24,7 @@ public class OrderSneakersSituation {
         customer.askRunningShoes();
         //staff 가 운동화에 대해서 설명해줌
         staff.askNike();
-
-        // 내가 돈이 있는지, 재고도 있는지 확인한다
-        // 돈 없으면 종료
-        // 돈 있으면 재고가 있는지 체크
-        customer.askPay(staff, isCustomerLikeDelivery);
+        customer.askPay(staff, deliveryManager, isCustomerLikeDelivery);
 
 
 

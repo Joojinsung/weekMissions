@@ -24,7 +24,7 @@ public class Staff {
 
 
     public long getNikeSneakersPrice() {
-        return  nikeSneakersPrice;
+        return nikeSneakersPrice;
     }
 
     public boolean isHavingNikeSneakersInStore() {
@@ -36,6 +36,7 @@ public class Staff {
 
         return money;
     }
+
     public void setMoney(long money) {
         this.money = money;
     }
@@ -44,5 +45,32 @@ public class Staff {
         this.nikeSneakersPrice = nikeSneakersPrice;
     }
 
+    public boolean nikeHave() {
+        boolean isOk = false;
+        if (havingNikeSneakersInStore) {
+            System.out.println("재고가 있어요!!");
+            System.out.println("고객 : 주문을 계속 진행합니다 + 매장 직원의 신발 가격 안내");
+            System.out.println("신발의 가격은 " + nikeSneakersPrice + " 원입니다");
+            return true;
+        } else {
+            System.out.println("재고가 없어요ㅠㅠ");
+            //배송 안내
+            System.out.println("배송으로 해드릴까요?");
+        }
+        return isOk;
+    }
+
+    public void addRevenue(long revenue) {
+        System.out.println("결제 하겠습니다 금액은 " + nikeSneakersPrice + " 원 입니다");
+        setMoney(getMoney() + revenue);
+        System.out.println("매상에 추가 후 잔고는 = " + getMoney());
+        System.out.println("신발을 전달합니다 ");
+    }
+
+
+    public void deductMoney() {
+        this.money -= getNikeSneakersPrice();
+
+    }
 
 }
