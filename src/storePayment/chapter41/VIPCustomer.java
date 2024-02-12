@@ -1,13 +1,11 @@
-package storePayment;
+package storePayment.chapter41;
 
-public class VIPCustomer extends Customer{
+public class VIPCustomer extends Customer {
     static int serialNums = 1;
     private String agentID;
     private double bonusPointRatio;
 
-    static {
-        System.out.println("VIP 클래스가 로딩됩니다");
-    }
+
 
     //행위
 

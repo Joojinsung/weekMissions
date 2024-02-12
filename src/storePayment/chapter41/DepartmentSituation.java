@@ -1,7 +1,7 @@
-package storePayment;
+package storePayment.chapter41;
 
 public class DepartmentSituation {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         // 전제 상황
         int price = 10000;
         Staff staff = new Staff();
@@ -13,6 +13,13 @@ public class DepartmentSituation {
         Customer customer3 = new VIPCustomer("김좌진");
         Customer customer4 = new VIPCustomer("김혜수");
         Customer customer5 = new GoldCustomer("김혜수");
+
+
+        String hello1 = "Hello";
+        String hello2 = new String("Hello");
+        String hello3 = new String("Hello");
+        String hello4 = new String("Hello");
+
 
         Customer[] customersQueue = {
                 new GoldCustomer("정우영")
@@ -27,6 +34,8 @@ public class DepartmentSituation {
         }
         staff.printMySalseAmount();
 
-
+        while (true) {
+            Thread.sleep(100);
+        }
     }
 }

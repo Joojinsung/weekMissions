@@ -1,11 +1,8 @@
-package storePayment;
+package storePayment.chapter41;
 
 public class Customer {
     static int serialNums = 1;
 
-    static {
-        System.out.println("Customer 클래스가 로딩됩니다");
-    }
 
     protected String customerID;
     protected String name;
