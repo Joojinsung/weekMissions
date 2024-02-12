@@ -1,7 +1,5 @@
 package interfaceLear;
 
-import java.util.Arrays;
-
 public class interfaceTest {
     public static void main(String[] args) {
         Flyable airplane = new Airplane("123");

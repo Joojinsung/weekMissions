@@ -1,4 +1,4 @@
-package interfaceLear.chapter_37;
+package interfaceLear;
 
 public class Baby {
     private String name;

@@ -1,4 +1,4 @@
-package interfaceLear.chapter_37;
+package interfaceLear;
 
 public class Male extends FamilyMan implements  EmployeeRole, FamilyRole {
     //속성

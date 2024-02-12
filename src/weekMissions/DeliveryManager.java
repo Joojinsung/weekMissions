@@ -30,13 +30,6 @@ public class DeliveryManager {
         return costForDeliver;
     }
 
-    public void addPakege() {
-        System.out.println("배송원은 패키지를 만듭니다");
-        System.out.println("고객에게 패키지를 전달합니다");
-        System.out.println("'배송 담당자'는 '자신의 매상'에 돈을 더합니다.");
-
-
-    }
 
     public void addMoney() {
         this.totalMoney += costForDeliver;

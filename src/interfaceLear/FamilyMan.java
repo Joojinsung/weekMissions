@@ -1,4 +1,4 @@
-package interfaceLear.chapter_37;
+package interfaceLear;
 
 public abstract class FamilyMan implements FamilyRole {
     protected String name;
