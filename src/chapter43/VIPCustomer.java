@@ -1,4 +1,4 @@
-package storePayment.chapter41;
+package chapter43;
 
 public class VIPCustomer extends Customer {
     static int serialNums = 1;

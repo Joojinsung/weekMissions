@@ -215,8 +215,8 @@ C:\Users\jinsu\.jdks\openjdk-21.0.2\bin\jcmd.exe 13500 GC.class_histogram
  211:             1             96  jdk.internal.jimage.ImageReader$SharedImageReader (java.base@21.0.2)
  212:             3             96  jdk.internal.util.ClassFileDumper (java.base@21.0.2)
  213:             4             96  jdk.internal.util.OperatingSystem (java.base@21.0.2)
- 214:             2             96  storePayment.chapter41.GoldCustomer
- 215:             2             96  storePayment.chapter41.VIPCustomer
+ 214:             2             96  chapter41.GoldCustomer
+ 215:             2             96  chapter41.VIPCustomer
  216:             3             96  sun.net.spi.DefaultProxySelector$NonProxyInfo (java.base@21.0.2)
  217:             2             96  sun.nio.cs.UTF_8$Encoder (java.base@21.0.2)
  218:             1             88  java.util.regex.Pattern (java.base@21.0.2)
@@ -232,7 +232,7 @@ C:\Users\jinsu\.jdks\openjdk-21.0.2\bin\jcmd.exe 13500 GC.class_histogram
  228:             2             80  java.lang.ref.NativeReferenceQueue (java.base@21.0.2)
  229:             2             80  java.util.IdentityHashMap (java.base@21.0.2)
  230:             1             80  java.util.zip.ZipFile$Source (java.base@21.0.2)
- 231:             2             80  storePayment.chapter41.Customer
+ 231:             2             80  chapter41.Customer
  232:             1             80  sun.nio.ch.NioSocketImpl (java.base@21.0.2)
  233:             1             80  sun.util.cldr.CLDRLocaleProviderAdapter (java.base@21.0.2)
  234:             1             80  sun.util.locale.provider.JRELocaleProviderAdapter (java.base@21.0.2)
@@ -512,7 +512,7 @@ C:\Users\jinsu\.jdks\openjdk-21.0.2\bin\jcmd.exe 13500 GC.class_histogram
  508:             1             16  jdk.internal.util.Preconditions$2 (java.base@21.0.2)
  509:             1             16  jdk.internal.util.Preconditions$3 (java.base@21.0.2)
  510:             1             16  jdk.net.WindowsSocketOptions (jdk.net@21.0.2)
- 511:             1             16  storePayment.chapter41.Staff
+ 511:             1             16  chapter41.Staff
  512:             1             16  sun.instrument.InstrumentationImpl$$Lambda/0x0000019d50041908 (java.instrument@21.0.2)
  513:             1             16  sun.net.spi.DefaultProxySelector (java.base@21.0.2)
  514:             1             16  sun.net.www.protocol.file.Handler (java.base@21.0.2)

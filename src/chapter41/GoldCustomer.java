@@ -1,4 +1,4 @@
-package storePayment.chapter43;
+package chapter41;
 
 public class GoldCustomer extends Customer {
     private double discountRatio;

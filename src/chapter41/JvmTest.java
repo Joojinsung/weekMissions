@@ -1,4 +1,4 @@
-package storePayment.chapter41;
+package chapter41;
 
 public class JvmTest {
     public static void main(String[] args) {

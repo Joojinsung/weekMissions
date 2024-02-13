@@ -1,4 +1,4 @@
-package storePayment.chapter41;
+package chapter41;
 
 public class DepartmentSituation {
     public static void main(String[] args) throws InterruptedException {

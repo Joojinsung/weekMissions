@@ -1,4 +1,4 @@
-package storePayment.chapter41;
+package chapter44;
 
 public class Customer {
     static int serialNums = 1;
@@ -12,7 +12,6 @@ public class Customer {
 
     //행위
     public int calculatePrice(int price) {
-
         this.bonusPoint += (int) (price * bonusPointRatio);
         return price;
     }
@@ -20,6 +19,7 @@ public class Customer {
     Customer() {
 
     }
+
 
     public Customer(String name) {
         this.customerID = "Customer" + serialNums++;
@@ -29,6 +29,10 @@ public class Customer {
         this.bonusPoint = 0;
     }
 
+    public Customer(String customerID, String name) {
+        this.name = name;
+        this.customerID = customerID;
+    }
 
     @Override
     public String toString() {
@@ -40,4 +44,17 @@ public class Customer {
                 ", bonusPointRatio=" + bonusPointRatio +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (obj instanceof Customer) {
+            Customer customer = (Customer) obj;
+            return customer.customerID == this.customerID && customer.name == this.name;
+        }
+        return false;
+    }
+
 }

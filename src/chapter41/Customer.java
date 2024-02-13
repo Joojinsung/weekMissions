@@ -1,6 +1,4 @@
-package storePayment.chapter43;
-
-import java.util.Objects;
+package chapter41;
 
 public class Customer {
     static int serialNums = 1;
@@ -23,7 +21,6 @@ public class Customer {
 
     }
 
-
     public Customer(String name) {
         this.customerID = "Customer" + serialNums++;
         this.name = name;
@@ -32,12 +29,6 @@ public class Customer {
         this.bonusPoint = 0;
     }
 
-    public Customer(String customerID, String name) {
-        this(name);
-        this.customerID = customerID;
-
-
-    }
 
     @Override
     public String toString() {
@@ -49,17 +40,4 @@ public class Customer {
                 ", bonusPointRatio=" + bonusPointRatio +
                 '}';
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == null) {
-            return false;
-        }
-        if (obj instanceof Customer) {
-            Customer customer = (Customer) obj;
-            return customer.customerID == this.customerID && customer.name == this.name;
-        }
-        return false;
-    }
-
 }

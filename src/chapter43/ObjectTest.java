@@ -1,4 +1,4 @@
-package storePayment.chapter43;
+package chapter43;
 
 public class ObjectTest {
     public static void main(String[] args) {
